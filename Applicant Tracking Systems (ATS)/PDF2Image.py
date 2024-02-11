@@ -1,5 +1,3 @@
-from dotenv import load_dotenv
-load_dotenv()
 import streamlit as st
 import io
 import base64
@@ -37,7 +35,7 @@ def input_pdf_setup(uploaded_file):
 st.set_page_config(page_title="ATS Resume Analyzer")
 st.header("ATS Tracking System")
 input_text = st.text_area("Job Description: ", key="input")
-uploaded_file = st.file_uploader("Upload your resume(PDF)...",type=["pdf"])
+uploaded_file = st.file_uploader("Upload your resume(PDF)",type=["pdf"])
 
 if uploaded_file is not None:
     st.write("PDF Uploaded Successfully")
