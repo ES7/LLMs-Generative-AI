@@ -11,3 +11,6 @@ The library that we are using to convert pdf into images **“pdf2image”** wil
 Environment Variables → System Variables → PATH → new → copy → OK<br>
 <br>
 In **`PDF2Text.py`** file instead of converting PDF to image we will convert PDF into text. For this we will be using the **PyPDF2** library. The first function will be the same to get the response but the second function will be modified. In the second function we will first read the pdf, `pdf.PdfReader(uploaded_file)`. Then in the reader variable there will be multiple pages so we will explore every page and extract all the information, `page = reader.pages[page]`. And put the information into the text variable, `text = str(page.extract_text())`. Then we will make a **prompt template**. And rest we will follow the same procedure.
+
+## Summarizing Research Papers
+Using the same code just by changing the prompt we can use this model to summarize Research Papers for us. The results can be seen in **`SummarizingResearchPaper.py`** file. 
