@@ -1,7 +1,4 @@
-from dotenv import load_dotenv
-load_dotenv()
 import streamlit as st
-import os
 import PyPDF2 as pdf
 import google.generativeai as genai
 
@@ -37,16 +34,15 @@ I want the response in one single string having the structure
 """
 
 # Streamlit APP
-
 st.set_page_config(page_title="ATS Resume Analyzer")
 st.header("ATS Tracking System")
 input_text = st.text_area("Job Description")
-uploaded_file = st.file_uploader("Upload your resume(PDF)...",type=["pdf"], help="Please uplaod the pdf")
+uploaded_file = st.file_uploader("Upload your resume(PDF)", type=["pdf"], help="Please uplaod the pdf")
 
 submit = st.button("Submit")
 
 if submit:
     if uploaded_file is not None:
-        text=input_pdf_text(uploaded_file)
+        text = input_pdf_text(uploaded_file)
         response = get_gemini_response(input_prompt)
         st.write(response)
