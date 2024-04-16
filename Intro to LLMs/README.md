@@ -24,6 +24,10 @@ Here we will try to measure sentence similarity, it measures how close two piece
 Zero-Shot is an alternate method to avoid fine-tuning. Here we will use the Hugging Face model to solve Audio Classification problem.<br>
 **Code :-** **`2.3. Zero_Shot_Audio_Classification.ipynb`**
 
-### 2.3. Automatic Speech Recognition (ASR)
+### 2.4. Automatic Speech Recognition (ASR)
 ASR is a task that involves transcribing speech audio recording into text. Eg: meeting notes or automatic video subtitle. For this task we will learn the Whisper model by OpenAI. This model was trained on vast quantity of labeled audio transcription data 680,000 hours to be precise. 117,000 hours of this pre-training data is multilingual or non-english. This results in checkpoints that can be applied to over 96 languages.<br>
 **Code :-** **`2.4. Automatic_Speech_Recognition.ipynb`**
+
+### 2.5. Text to Speech
+It is a challenging task because it is a one-to-many problem. In classification we have one correct label and maybe a few. In ASR there is one correct transcription for a given utterance. However there are an infinite number of ways to say the same sentence. Each person has a different way of speaking but they are all valid and correct. Think about different voices, dialects, speaking styles and so on. Despite these challenges there are open-source models that can handle this task really well.<br>
+**Code :-** **`2.5. Text_to_Speech.ipynb`**
