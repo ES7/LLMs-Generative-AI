@@ -19,3 +19,8 @@ We will try to create our own chatbot and for this we will use Facebook's blende
 ### 2.2. Embeddings
 Here we will try to measure sentence similarity, it measures how close two pieces of text are. For example ‘I like kittens’ and ‘We love cats’ have similar meanings. Sentence similarity is particularly used for information retrieval and clustering or grouping. The sentence similarity models convert input text into vectors or so-called embeddings. These embeddings capture semantic information.<br>
 **Code :-** **`2.2. Embeddings.ipynb`**
+
+### 2.3. Zero-Shot Audio Classification
+Zero-Shot is an alternate method to avoid fine-tuning. Here we will use the Hugging Face model to solve Audio Classification problem.<br>
+**Code :-** **`2.3. Zero_Shot_Audio_Classification.ipynb`**
+
