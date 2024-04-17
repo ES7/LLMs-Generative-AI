@@ -32,6 +32,10 @@ ASR is a task that involves transcribing speech audio recording into text. Eg: m
 It is a challenging task because it is a one-to-many problem. In classification we have one correct label and maybe a few. In ASR there is one correct transcription for a given utterance. However there are an infinite number of ways to say the same sentence. Each person has a different way of speaking but they are all valid and correct. Think about different voices, dialects, speaking styles and so on. Despite these challenges there are open-source models that can handle this task really well.<br>
 **Code :-** **`2.5. Text_to_Speech.ipynb`**
 
-### 2.5. Object Detection
+### 2.6. Object Detection
 The task of object detection simply consists of detecting objects of interest in a specific image. Object detection combines two subtasks, which are classification but also localization. Because for each object that we detect in an image, we also have to provide the label of the instance, but also the localization of the detected object.<br>
 **Code :-** **`2.6. Object_Detection.ipynb`**
+
+### 2.7. Image Segmentation
+Here we will perform image segmentation and something called visual prompting. We will specify a point in the picture and the segmentation model will then identify a segmented object of interest.<br>
+**Code :-** **`2.7. Image_Segmentation.ipynb`**
