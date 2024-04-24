@@ -39,3 +39,7 @@ The task of object detection simply consists of detecting objects of interest in
 ### 2.7. Image Segmentation
 Here we will perform image segmentation and something called visual prompting. We will specify a point in the picture and the segmentation model will then identify a segmented object of interest.<br>
 **Code :-** **`2.7. Image_Segmentation.ipynb`**
+
+### 2.8. Image Retrieval
+Here we will work with multimodal models to perform image-text matching using the open-source model Bleep from salesforce. So if we pass an image along with a text it will compare how similar they both are.
+**Code :-** **`2.8. Image_Retrival.ipynb`**
